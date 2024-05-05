@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+*{
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Navbar */
+header {
+  background: white;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* Photo */
+.image-section {
+  padding-top: 20px;
+  padding-left: 300px;
+  position: relative;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
+.image-wrapper img {
+  width: 600px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .image-wrapper {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
+.image-text {
+  position: absolute; 
+  top: 10%; 
+  left: 48%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  color: black; 
+  
+  
+}
+
+/* About Me */
+.about-me {
+  background-color: #274472;
+  padding: 20px;
+  color: white;
+}
+
+.about-me h2 {
+  border-bottom: 4px solid white;
+  padding-bottom: 10px;
+  max-width: fit-content;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Experience & Skill */
+.experience-skill {
+  background-color: white;
+  padding: 20px;
+  color: #274472;
+}
+
+.experience-skill h3 {
+  border-bottom: 4px solid #274472;
+  padding-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #274472;
+  padding: 20px 0 50px;
+  color: white;
+  text-align: center;
+}
+.contact-form div {
+  margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background: white;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  resize: none;
+}
+
+.contact-form input ::placeholder,
+.contact-form textarea::placeholder {
+  color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  background-color: white;
+  color: #274472;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: rgb(209, 207, 207);
+  color: black;
+}
+
+footer h2 {
+  border-bottom: 4px solid white;
+  padding-bottom: 10px;
+  max-width: fit-content;
+}
+
+footer p {
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
